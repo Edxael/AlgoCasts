@@ -6,8 +6,18 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+
+    // Using single line
 function reverse(str) {
   return str.split("").reverse().join("")
+}
+
+
+    // Using Reduce()
+const reverse = (str) => {
+  return str.split('').reduce((reversed, character)=>{
+    return character + reversed
+  }, '')
 }
 
 
