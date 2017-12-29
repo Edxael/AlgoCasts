@@ -47,4 +47,5 @@ function reverse(str) {
 }
 
 
+   // Exporting the Module.
 module.exports = reverse;
